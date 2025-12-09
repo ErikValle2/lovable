@@ -100,7 +100,7 @@ const TryOn = () => {
       }
 
       const response = await fetch(
-        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/generate-tryon`,
+        "http://localhost:5000/api/generate-tryon", // Points to your local server
         {
           method: 'POST',
           headers: {
